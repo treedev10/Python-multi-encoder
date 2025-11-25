@@ -123,12 +123,13 @@ def encode():
  print("----------------")
 
 
-encode_decode = input("encode or decode(decode hasent been aded yet)")
+encode_decode = input("encode or decode(decode is in progress)")
 
 if encode_decode == "encode":
     encode()
 else:
     print("invalid")
+
 
 
 
