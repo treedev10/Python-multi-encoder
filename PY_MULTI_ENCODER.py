@@ -1,6 +1,6 @@
 #
 #python multi encoder by tree43 and chatgpt lol
-v = " v1.1.0"
+v = " v1.1.1"
 #
 
 import tkinter as tk
@@ -136,6 +136,8 @@ def run_action(event=None):
 root = tk.Tk()
 root.title(f"python multi decoder/encoder{v}")
 root.geometry("900x480")
+root.resizable(False,False)
+               
 
 main_frame = tk.Frame(root)
 main_frame.pack(fill="both", expand=True)
@@ -181,7 +183,7 @@ entry.focus_set()
 entry.bind("<Return>", run_action)
 
 # initial message
-terminal.insert(tk.END, "Terminal ready!\nType text in the entry and press RUN (or Enter).\nToggle Mode on the left.\n\n")
+terminal.insert(tk.END, "Terminal ready!\nType text below and press RUN (or Enter).\nToggle Mode on the left.\n\n")
 terminal.see(tk.END)
 
 root.mainloop()
